@@ -1,0 +1,13 @@
+<h1>New review</h1>
+
+
+<%= form_for [@restaurant, @review] do |r| %>
+  <%= r.label :author, 'Your Name' %>:
+  <%= r.text_field :author %> <br/>
+  <%= r.label :comment, 'Your Review' %>:
+  <%= r.text_area :comment %><br/>
+  <%= r.submit %>
+<% end %>
+
+<%= link_to 'Back', reviews_path %>
+
