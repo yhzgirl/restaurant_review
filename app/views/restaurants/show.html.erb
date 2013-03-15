@@ -3,7 +3,8 @@
 <p>
   <b>Name:</b>
   <%= @restaurant.name %>
-</p>
+
+<%= render :partial => 'reviews/reviews', :locals => {:reviews => @restaurant.reviews}  %></p>
 
 <%= link_to 'Review', new_restaurant_review_path(@restaurant) %>
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |

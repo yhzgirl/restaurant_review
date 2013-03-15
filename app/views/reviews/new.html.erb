@@ -1,5 +1,7 @@
 <h1>New review</h1>
 
+<H2>Review for <%= @restaurant.name %> </H2>
+
 <%= form_for [@restaurant, @review] do |r| %>
   <%= r.label :author, 'Your Name' %>:
   <%= r.text_field :author %> <br/>

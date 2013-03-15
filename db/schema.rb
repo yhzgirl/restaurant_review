@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(:version => 20130314143636) do
   end
 
   create_table "reviews", :force => true do |t|
-    t.text     "comment"
-    t.string   "author"
-    t.integer  "restaurant_id"
+    t.text     "comment",       :null => false
+    t.string   "author",        :null => false
+    t.integer  "restaurant_id", :null => false
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

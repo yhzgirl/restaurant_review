@@ -1,7 +1,8 @@
-<h1>List of Reviews:</h1>
+<h1>List of Reviews for <%=params[:restaurant_id] </h1>
+
 
 <% @reviews.each do |r| %>
-  <h2>This is a review</h2>
+  <h2>This is a review for <%= @restaurant.name %> </h2>
 by: <%= r.author%> 
   <p><%= r.comment %></p>
  
